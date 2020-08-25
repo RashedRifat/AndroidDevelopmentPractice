@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Text Passage Coding Challenge</string>
+    <string name="activity2_name">Second Activity</string>
+    <string name="text_header">Select a passage.</string>
+    <string name="text_one">Text One</string>
+    <string name="text_two">Text Two</string>
+    <string name="text_three">Text Three</string>
+    <string name="passage_selected">Passage Selected.</string>
+    <string name='content_one'> Do not stand at my grave and weep\n
+I am not there; I do not sleep.\n
+I am a thousand winds that blow,\n
+I am the diamond glints on snow,\n
+I am the sun on ripened grain,\n
+I am the gentle autumn rain.\n
+When you awaken in the morning\'s hush\n
+I am the swift uplifting rush\n
+Of quiet birds in circled flight.\n
+I am the soft stars that shine at night.\n
+Do not stand at my grave and cry,\n
+I am not there; I did not die. </string>
+    <string name="content_two">Out of the night that covers me,\n
+   Black as the pit from pole to pole,\n
+I thank whatever gods may be\n
+    For my unconquerable soul.\n\n
+
+In the fell clutch of circumstance\n
+    I have not winced nor cried aloud.\n
+Under the bludgeonings of chance\n
+    My head is bloody, but unbowed.\n\n
+
+Beyond this place of wrath and tears\n
+    Looms but the Horror of the shade,\n
+And yet the menace of the years\n
+    Finds and shall find me unafraid.\n\n
+
+It matters not how strait the gate,\n\n
+   How charged with punishments the scroll,\n\n
+I am the master of my fate,\n
+   I am the captain of my soul.\n\n
+    </string>
+
+    <string name="content_three">The tree that never had to fight\n
+     For sun and sky and air and light,\n
+But stood out in the open plain\n
+     And always got its share of rain,\n
+Never became a forest king\n
+     But lived and died a scrubby thing.\n\n
+
+The man who never had to toil\n
+     To gain and farm his patch of soil,\n
+Who never had to win his share\n
+     Of sun and sky and light and air,\n
+Never became a manly man\n
+     But lived and died as he began.\n\n
+
+Good timber does not grow with ease,\n
+     The stronger wind, the stronger trees,\n
+The further sky, the greater length,\n
+     The more the storm, the more the strength.\n
+By sun and cold, by rain and snow,\n
+     In trees and men good timbers grow.\n\n
+
+Where thickest lies the forest growth\n
+     We find the patriarchs of both.\n
+And they hold counsel with the stars\n
+     Whose broken branches show the scars\n
+Of many winds and much of strife.\n
+     This is the common law of life.\n\n
+    </string>
+    <string name="title_one">Do Not Stand By My Grave and Weep</string>
+    <string name="title_two">Invictus</string>
+    <string name="title_three">Good Timber</string>
+    <string name="back">BACK</string>
+
+</resources>

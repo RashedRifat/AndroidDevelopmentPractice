@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ShoppingList</string>
+    <string name="title">Shopping List</string>
+    <string name="add_common_items">Add Common Items</string>
+    <string name="hint">What\'s it going to be?</string>
+    <string name="empty" />
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="select_an_item_from_below">Select an Item From Below</string>
+    <string name="rice">Rice</string>
+    <string name="cheese">Cheese</string>
+    <string name="milk">Milk</string>
+    <string name="apples">Apples</string>
+    <string name="oranges">Oranges</string>
+    <string name="lemons">Lemons</string>
+    <string name="toms">Tomatoes</string>
+</resources>
