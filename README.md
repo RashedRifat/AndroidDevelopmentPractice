@@ -21,4 +21,7 @@ TextPassageCodingChallenge: Testing displaying different passages from one centr
 
 **ShoppingList:** A very basic shopping list project that allows for up to ten items to be recorded. Contains a list of common items that can be automatically added to the shopping list if desired, through clicking a button. 
 
+ImplicitIntents: Basic's of experimenting with implicint intents, filters and categories. 
+
+ImplicitIntentReciever: Experimenting with recieving implicit intents and the Android Back Stack. 
 
