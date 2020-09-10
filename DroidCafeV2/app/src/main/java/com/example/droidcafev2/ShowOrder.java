@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static com.example.droidcafev2.MainActivity.*;
 
@@ -34,5 +36,30 @@ public class ShowOrder extends AppCompatActivity {
 
     public void cancel(View view) {
         finish();
+    }
+
+    public void onRadioButtonClicked(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+        switch (view.getId()) {
+            case R.id.sameday:
+                if (checked)
+                    displayToast(getString(R.string.same_day_messenger_service));
+                break;
+            case R.id.nextday:
+                if (checked)
+                    displayToast(getString(R.string.next_day_ground_delivery));
+                break;
+            case R.id.pickup:
+                if (checked)
+                    displayToast(getString(R.string.pick_up));
+                break;
+            default:
+                Log.e("Show Order Activity", "Radio Button Case not matched");
+                break;
+        }
+    }
+
+    public void displayToast(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 }

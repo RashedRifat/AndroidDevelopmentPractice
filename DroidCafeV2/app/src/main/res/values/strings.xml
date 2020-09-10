@@ -16,4 +16,16 @@
     <string name="show_froyo">You ordered a froyo!</string>
     <string name="show_sandwich">You ordered an ice cream sandwich!</string>
     <string name="cancel">Cancel</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="address">Address</string>
+    <string name="enter_your_address">Enter your adress</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="enter_phone_number">Enter your number</string>
+    <string name="enter_note">Leave us a note!</string>
+    <string name="note">Note:</string>
+    <string name="delivery">Choose a delivery method:</string>
+    <string name="same_day_messenger_service">Same day messenger service</string>
+    <string name="next_day_ground_delivery">Next day ground delivery</string>
+    <string name="pick_up">Pick up</string>
 </resources>
