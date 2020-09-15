@@ -16,6 +16,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     public static final String DONUT = "DONUT_COUNT";
     public static final String FROYO = "FROYO";
@@ -29,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        Log.d(LOG_TAG, "IS THIS WORKING?");
         FloatingActionButton fab = findViewById(R.id.fab);
     }
 
@@ -45,13 +49,27 @@ public class MainActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_order) {
-            return true;
+        switch (item.getItemId()){
+            case R.id.action_order:
+                displayToast(getString(R.string.action_order_message));
+                View view = findViewById(R.id.fab);
+                showOrders(view);
+                return true;
+            case R.id.action_status:
+                displayToast(getString(R.string.action_order_message));
+                return true;
+            case R.id.action_favorites:
+                if ((donut_count + froyo_count + sandwich_count) == 0){
+                    displayToast("You have not yet selected any desserts!");
+                    return true; }
+                displayToast(fav_order());
+                return true;
+            case R.id.action_contact:
+                displayToast(getString(R.string.action_contact_message));
+                return true;
+            default:
+                //Do nothing
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -79,7 +97,18 @@ public class MainActivity extends AppCompatActivity {
         showOrder.putExtra(DONUT, donut_count);
         showOrder.putExtra(FROYO, froyo_count);
         showOrder.putExtra(SANDWICH, sandwich_count);
-        Log.d(LOG_TAG, "Starting Activity");
+        Log.d(LOG_TAG, String.valueOf(view.getId()));
         startActivity(showOrder);
     }
+
+    public String fav_order() {
+        if (donut_count > froyo_count && donut_count > sandwich_count)
+            return "Your favorite dessert is our donuts!";
+        if (froyo_count > donut_count && froyo_count > sandwich_count)
+            return "Your favorite dessert is our froyo!";
+        if (sandwich_count > froyo_count && sandwich_count > donut_count)
+            return "Your favorite dessert is our ice cream sandwiches!";
+        return "You like all of our desserts equally!";
+    }
+
 }

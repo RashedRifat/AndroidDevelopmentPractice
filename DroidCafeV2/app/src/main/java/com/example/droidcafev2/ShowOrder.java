@@ -17,6 +17,7 @@ import static com.example.droidcafev2.MainActivity.*;
 
 public class ShowOrder extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     TextView ordered;
+    private int firstToast = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +29,12 @@ public class ShowOrder extends AppCompatActivity implements AdapterView.OnItemSe
         donut_count = orders.getIntExtra(MainActivity.DONUT, 0);
         froyo_count = orders.getIntExtra(MainActivity.FROYO, 0);
         sandwich_count = orders.getIntExtra(SANDWICH, 0);
-        Log.d("LOG_TAG", String.valueOf(donut_count));
+        //Log.d("LOG_TAG", String.valueOf(donut_count));
         StringBuilder orderMessage = new StringBuilder();
         orderMessage.append("Your orders are listed below.\n\nYou have ordered ").append(String.valueOf(donut_count)).append(" donuts.");
         orderMessage.append("\nYou have ordered ").append(String.valueOf(froyo_count)).append(" froyo's.");
         orderMessage.append("\nYou have ordered ").append(String.valueOf(sandwich_count)).append(" ice-cream sandwiches.");
-        Log.d("LOG_TAG", String.valueOf(orderMessage));
+        //Log.d("LOG_TAG", String.valueOf(orderMessage));
         ordered.setText(orderMessage);
 
         //Create Spinner
@@ -82,8 +83,11 @@ public class ShowOrder extends AppCompatActivity implements AdapterView.OnItemSe
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        String spinnerLabel = adapterView.getItemAtPosition(i).toString();
-        displayToast(spinnerLabel);
+        if (firstToast > 0) {
+            String spinnerLabel = adapterView.getItemAtPosition(i).toString();
+            displayToast(spinnerLabel);
+        }
+        firstToast += 1;
     }
 
     @Override
