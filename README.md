@@ -28,3 +28,4 @@ ImplicitIntentReciever: Experimenting with recieving implicit intents and the An
 
 **!Droid CafeV2:** A fun app with clickable images to show orders at a virtual cafe. Experimented with clickable images and used intents to relay messages and parse strings at runtime. 
 
+DialogForAlert: First foray into creating dialog alerts. Will implement these methods into Droid CafeV2. 
