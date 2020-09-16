@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DialogForAlert</string>
+    <string name="click_tester">Click to test the Dialog Alert</string>
+    <string name="alert">Alert</string>
+</resources>
