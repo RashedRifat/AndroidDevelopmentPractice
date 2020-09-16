@@ -1,11 +1,13 @@
 package com.example.droidcafev2;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -56,7 +58,9 @@ public class MainActivity extends AppCompatActivity {
                 showOrders(view);
                 return true;
             case R.id.action_status:
-                displayToast(getString(R.string.action_order_message));
+                //View viewer = findViewById(R.id.layout);
+                showStatus();
+                displayToast(getString(R.string.action_status_message));
                 return true;
             case R.id.action_favorites:
                 if ((donut_count + froyo_count + sandwich_count) == 0){
@@ -109,6 +113,23 @@ public class MainActivity extends AppCompatActivity {
         if (sandwich_count > froyo_count && sandwich_count > donut_count)
             return "Your favorite dessert is our ice cream sandwiches!";
         return "You like all of our desserts equally!";
+    }
+
+    public void showStatus(){
+        AlertDialog.Builder newAlert = new AlertDialog.Builder(MainActivity.this);
+        newAlert.setTitle("Account Alerts");
+        newAlert.setMessage("No alerts present.");
+        newAlert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialogInterface, int which) {
+                Toast.makeText(getApplicationContext(), "Dismissed", Toast.LENGTH_SHORT).show();
+            }
+        });
+    newAlert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+        public void onClick(DialogInterface dialogInterface, int which) {
+            Toast.makeText(getApplicationContext(), "Dismissed", Toast.LENGTH_SHORT).show();
+        }
+    });
+    newAlert.show();
     }
 
 }
