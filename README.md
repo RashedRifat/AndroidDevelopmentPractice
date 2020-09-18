@@ -1,6 +1,6 @@
 # Android Development Practice
 
-This is a refrence repository dedicated to projects and experiments related to Android App Development. Each project folder within this repo contains a working Android App with barebone features, usually testing a single aspect of Android Studio. This repo roughly follows the CodeLab notebooks associated with Google's Associate Android Developer course. 
+This is a refrence repository dedicated to projects and experiments related to Android App Development. Each project folder within this repo contains a working Android App with barebone features, usually testing a single aspect of Android Studio. **This repo roughly follows the CodeLab notebooks associated with Google's Associate Android Developer course.** 
 
 A list of project descriptions is featured below. Some signiicant projects ar bolded to demonstrate mastery of several concepts or a capstone project for that unit. 
 
@@ -29,3 +29,5 @@ ImplicitIntentReciever: Experimenting with recieving implicit intents and the An
 **!Droid CafeV2:** A fun app with clickable images to show orders at a virtual cafe. Experimented with clickable images and used intents to relay messages and parse strings at runtime. 
 
 DialogForAlert: First foray into creating dialog alerts. Will implement these methods into Droid CafeV2. 
+
+DatePicker: Experimented with fragments and date pickers. First implementation. 
