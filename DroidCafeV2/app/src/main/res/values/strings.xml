@@ -42,4 +42,7 @@
     <string name="action_status_message">Showing the status of your order!</string>
     <string name="action_favorites_message">Showing your favorties!</string>
     <string name="action_contact_message">You selected contact.</string>
+    <string name="order_date">Order Date</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

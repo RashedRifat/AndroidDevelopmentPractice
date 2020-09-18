@@ -10,6 +10,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.DialogFragment;
 
 import android.util.Log;
 import android.view.View;
@@ -71,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_contact:
                 displayToast(getString(R.string.action_contact_message));
                 return true;
+            case R.id.action_datePicker:
+                showDatePicker();
+                return true;
             default:
                 //Do nothing
         }
@@ -130,6 +134,19 @@ public class MainActivity extends AppCompatActivity {
         }
     });
     newAlert.show();
+    }
+
+    public void showDatePicker(){
+        DialogFragment newFragment = new DatePicker();
+        newFragment.show(getSupportFragmentManager(),"datePicker");
+    }
+
+    public void dateProcessor(int year, int month, int day){
+        String s_year = Integer.toString(year);
+        String s_month = Integer.toString(month+1);
+        String s_day = Integer.toString(day);
+        String messager = ("Your Order has been processed for\n" + s_month + "/" + s_day + "/" + s_year + ".");
+        Toast.makeText(this, messager, Toast.LENGTH_SHORT).show();
     }
 
 }

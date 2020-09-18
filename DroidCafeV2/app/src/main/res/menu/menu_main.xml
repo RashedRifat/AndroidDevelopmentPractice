@@ -29,4 +29,9 @@
         android:title="@string/action_favorites"
         android:icon="@drawable/ic_action_favorites"
         app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_datePicker"
+        android:orderInCategory="5"
+        android:title="@string/order_date"
+        app:showAsAction="never"/>
 </menu>
