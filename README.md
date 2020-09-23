@@ -2,7 +2,7 @@
 
 This is a refrence repository dedicated to projects and experiments related to Android App Development. Each project folder within this repo contains a working Android App with barebone features, usually testing a single aspect of Android Studio. **This repo roughly follows the CodeLab notebooks associated with Google's Associate Android Developer course.** 
 
-A list of project descriptions is featured below. Some signiicant projects ar bolded to demonstrate mastery of several concepts or a capstone project for that unit. 
+A list of project descriptions is featured below. Some significant projects are bolded to demonstrate mastery of several concepts or a capstone project for that unit. 
 
 Feel free to take a look around and see some of my old projects. However, for fully developed projects, please take a look at the other standalone repositories dedicated to solely a single app. 
 
