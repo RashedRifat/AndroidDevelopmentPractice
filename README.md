@@ -32,4 +32,4 @@ DialogForAlert: First foray into creating dialog alerts. Will implement these me
 
 DatePicker: Experimented with fragments and date pickers. First implementation. 
 
-TabExperiment: First attempt at using tabs. Currently not fully functional. Working on debugging! 
+TabExperiment: First attempt at using tabs. After intial issues/error, the code is now fully functional. An error occured previously due to a case error in the swtich statement of the getItem() method of the PagerAdapter class. 

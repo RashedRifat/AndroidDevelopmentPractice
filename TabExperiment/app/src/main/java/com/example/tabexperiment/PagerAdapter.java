@@ -1,5 +1,7 @@
 package com.example.tabexperiment;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -16,10 +18,11 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+        Log.d("Error Code", String.valueOf(position));
         switch (position){
             case 0: return new TabFragment1();
             case 1: return new TabFragment2();
-            case 3: return new TabFragment3();
+            case 2: return new TabFragment3();
             default: return null;
         }
     }
