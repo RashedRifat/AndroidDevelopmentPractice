@@ -18,18 +18,18 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
             android:id="@+id/team1_display_name"
+            android:textSize="32sp"
             android:text="@string/team_1"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
             android:id="@+id/decreaseTeam1"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_remove"
-            android:contentDescription="@string/minus_sign"
-            android:onClick="decreaseScore"/>
+            android:onClick="decreaseScore"
+            style="@style/remove_buttons"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,18 +37,19 @@
             android:id="@+id/score_1"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
+            android:textSize="24sp"
             android:text="@string/zero"/>
 
         <ImageButton
             android:id="@+id/increaseTeam1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_plus"
-            android:contentDescription="@string/plus_button"
             android:layout_alignParentEnd="true"
-            android:onClick="increaseScore"/>
+            android:onClick="increaseScore"
+            style="@style/plus_buttons"
+            />
     </RelativeLayout>
 
         <RelativeLayout
@@ -62,18 +63,18 @@
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentTop="true"
                 android:id="@+id/team2_display_name"
-                android:text="@string/team_2"/>
+                android:text="@string/team_2"
+                android:textSize="32sp"/>
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
                 android:id="@+id/decreaseTeam2"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:contentDescription="@string/minus_sign"
-                android:src="@drawable/ic_remove"
-                android:onClick="decreaseScore"/>
+                android:onClick="decreaseScore"
+                style="@style/remove_buttons"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -81,19 +82,19 @@
                 android:id="@+id/score_2"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true"
+                android:textSize="24sp"
                 android:text="@string/zero"/>
 
 
         <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
                 android:id="@+id/increaseTeam2"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/ic_plus"
-                android:contentDescription="@string/plus_button"
                 android:layout_alignParentEnd="true"
-                android:onClick="increaseScore"/>
+                android:onClick="increaseScore"
+               style="@style/plus_buttons"/>
 
     </RelativeLayout>
 
