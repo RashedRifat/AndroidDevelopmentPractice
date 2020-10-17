@@ -1,3 +1,5 @@
+On hiatus until my other projects in app development are completed. Est time: 01/01/2021
+
 # Android Development Practice
 
 This is a refrence repository dedicated to projects and experiments related to Android App Development. Each project folder within this repo contains a working Android App with barebone features, usually testing a single aspect of Android Studio. **This repo roughly follows the CodeLab notebooks associated with Google's Associate Android Developer course.** 
